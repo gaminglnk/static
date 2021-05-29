@@ -501,7 +501,7 @@ a.plyr__control::before {
 }
 
 .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
-	background: #6557ff
+	background: #ffae05
 }
 
 .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::after {
@@ -529,7 +529,7 @@ a.plyr__control::before {
 	background: 0 0;
 	border: 0;
 	border-radius: 26px;
-	color: #6557ff;
+	color: #ffae05;
 	display: block;
 	height: 19px;
 	margin: 0;
@@ -654,17 +654,17 @@ a.plyr__control::before {
 }
 
 .plyr--full-ui input[type=range].plyr__tab-focus::-webkit-slider-runnable-track {
-	box-shadow: 0 0 0 5px rgba(101, 87, 255, .5);
+	box-shadow: 0 0 0 5px rgba(255, 174, 5, .5);
 	outline: 0
 }
 
 .plyr--full-ui input[type=range].plyr__tab-focus::-moz-range-track {
-	box-shadow: 0 0 0 5px rgba(101, 87, 255, .5);
+	box-shadow: 0 0 0 5px rgba(255, 174, 5, .5);
 	outline: 0
 }
 
 .plyr--full-ui input[type=range].plyr__tab-focus::-ms-track {
-	box-shadow: 0 0 0 5px rgba(101, 87, 255, .5);
+	box-shadow: 0 0 0 5px rgba(255, 174, 5, .5);
 	outline: 0
 }
 
@@ -870,7 +870,7 @@ a.plyr__control::before {
 }
 
 .plyr--audio.plyr--loading .plyr__progress__buffer {
-	background-color: rgba(193, 201, 209, .66)
+	background-color: rgba(255, 174, 5, .66)
 }
 
 .plyr__volume {
@@ -909,20 +909,20 @@ a.plyr__control::before {
 .plyr--audio .plyr__control.plyr__tab-focus,
 .plyr--audio .plyr__control:hover,
 .plyr--audio .plyr__control[aria-expanded=true] {
-	background: #6557ff;
+	background: #ffae05;
 	color: #fff
 }
 
 .plyr--full-ui.plyr--audio input[type=range]::-webkit-slider-runnable-track {
-	background-color: rgba(193, 201, 209, .66)
+	background-color: rgba(255, 174, 5, .66)
 }
 
 .plyr--full-ui.plyr--audio input[type=range]::-moz-range-track {
-	background-color: rgba(193, 201, 209, .66)
+	background-color: rgba(255, 174, 5, .66)
 }
 
 .plyr--full-ui.plyr--audio input[type=range]::-ms-track {
-	background-color: rgba(193, 201, 209, .66)
+	background-color: rgba(255, 174, 5, .66)
 }
 
 .plyr--full-ui.plyr--audio input[type=range]:active::-webkit-slider-thumb {
@@ -938,7 +938,7 @@ a.plyr__control::before {
 }
 
 .plyr--audio .plyr__progress__buffer {
-	color: rgba(193, 201, 209, .66)
+	color: rgba(255, 174, 5, .66)
 }
 
 .plyr--video {
@@ -1007,7 +1007,7 @@ a.plyr__control::before {
 .plyr--video .plyr__control.plyr__tab-focus,
 .plyr--video .plyr__control:hover,
 .plyr--video .plyr__control[aria-expanded=true] {
-	background: #6557ff;
+	background: #ffae05;
 	color: #fff
 }
 
@@ -1015,7 +1015,7 @@ a.plyr__control::before {
 .plyr--video a.plyr__control:hover,
 .plyr--video button.plyr__control.plyr__tab-focus,
 .plyr--video button.plyr__control:hover {
-	background: rgba(101, 87, 255, .5)
+	background: rgba(255, 174, 5, .5)
 }
 
 .plyr--video a.plyr__control.plyr__tab-focus svg,
@@ -1027,7 +1027,7 @@ a.plyr__control::before {
 
 .plyr--video a.plyr__control[aria-expanded=true],
 .plyr--video button.plyr__control[aria-expanded=true] {
-	background: rgba(101, 87, 255, .5)
+	background: rgba(255, 174, 5, .5)
 }
 
 .plyr--video a.plyr__control[aria-expanded=true] svg,
@@ -1043,11 +1043,11 @@ a.plyr__control::before {
 .plyr--video .plyr__menu__container .plyr__control.plyr__tab-focus,
 .plyr--video .plyr__menu__container .plyr__control:hover,
 .plyr--video .plyr__menu__container .plyr__control[aria-expanded=true] {
-	background: #6557ff!important
+	background: #ffae05!important
 }
 
 .plyr__control--overlaid {
-	background: rgba(101, 87, 255, .8);
+	background: rgba(255, 174, 5, .8);
 	border: 0;
 	border-radius: 100%;
 	color: #fff;
@@ -1069,7 +1069,7 @@ a.plyr__control::before {
 
 .plyr__control--overlaid:focus,
 .plyr__control--overlaid:hover {
-	background: rgba(101, 87, 255, .5)!important;
+	background: rgba(255, 174, 5, .5)!important;
 	transform: translate(-50%, -50%) scale(1.3)
 }
 
@@ -1526,7 +1526,7 @@ a.plyr__control::before {
 }
 
 .plyr__resume .plyr__resume__yes {
-	border: 1px solid #6557ff
+	border: 1px solid #ffae05
 }
 
 .plyr__resume button {
