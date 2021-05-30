@@ -235,7 +235,7 @@ a.plyr__control::before {
 }
 
 .plyr [data-plyr=googlecast] {
-	
+	display: none
 }
 
 .plyr--googlecast-supported button[data-plyr=googlecast] {
