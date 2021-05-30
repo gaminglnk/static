@@ -159,7 +159,7 @@
 	}
 }
 
-@media (min-width:768px) {
+@media (min-width:600px) {
 	.plyr__captions {
 		font-size: 27px
 	}
@@ -235,7 +235,7 @@ a.plyr__control::before {
 }
 
 .plyr [data-plyr=googlecast] {
-	display: none
+	
 }
 
 .plyr--googlecast-supported button[data-plyr=googlecast] {
