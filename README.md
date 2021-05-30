@@ -1,2 +1,0 @@
-# jsdelivr
-The cdn repository.
