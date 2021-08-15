@@ -40,6 +40,10 @@
 	z-index: 2;
 	cursor: pointer
 }*/
+.plyr-responsive {
+ width: 100%;
+ height: auto;
+}
 
 /* Now lies the main code */
 .plyr video {
