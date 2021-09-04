@@ -5,7 +5,7 @@ Applications that can be installed on a linux server in one command.
 
 To install apache web server, use this command on your linux machine :
 
-` sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/apache.sh && chmod +x ./apache.sh `
+` sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/apache.sh && sudo chmod +x ./apache.sh `
 
 and now run the "apache.sh" file to execute the installation.
 
@@ -17,7 +17,7 @@ and now run the "apache.sh" file to execute the installation.
 
 To install pterodactyl panel, use this command on your linux machine :
 
-` sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/game_panel.sh && chmod +x ./game_panel.sh `
+` sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/game_panel.sh && sudo chmod +x ./game_panel.sh `
 
 and now run the "game_panel.sh" file to execute the installation.
 
