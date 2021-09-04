@@ -31,20 +31,18 @@ sudo apt-get install vim -y &> /dev/null
 sudo apt-get install net-tools -y &> /dev/null
 if sudo apt install nano -y &> /dev/null
 then
-    printf "\r$c$b    Tools Installed $endc$enda\n" >&2
+    printf "\r$c$b    Tools Installed $endc$enda\n\n" >&2
 else
-    printf "\r$r$b    Tools Not Installed $endc$enda\n" >&2
+    printf "\r$r$b    Tools Not Installed $endc$enda\n\n" >&2
 fi
-
-printf "\r$c$b    Done Processing Tools Installation $endc$enda\n" >&2
 
 # Install linux Generic and Headers
 printf "$g$b    Installing Linux Generic and Headers... $endc$enda\n" >&2
 if sudo apt-get install linux-generic -y &> /dev/null
 then
-    printf "\r$c$b    Installed Linux-Generic $endc$enda\n" >&2
+    printf "\r$c$b    Installed Linux-Generic $endc$enda\n\n" >&2
 else
-    printf "\r$c$b    Not Installed Linux-Generic $endc$enda\n" >&2
+    printf "\r$r$b    Not Installed Linux-Generic $endc$enda\n\n" >&2
 fi
 sudo apt-get install linux-headers-`uname -r` -y &> /dev/null
 
@@ -52,17 +50,17 @@ sudo apt-get install linux-headers-`uname -r` -y &> /dev/null
 printf "$g$b    Installing Firewall... $endc$enda\n" >&2
 if sudo apt-get install ufw -y &> /dev/null
 then
-    printf "\r$c$b    Firewall Installed $endc$enda\n" >&2
+    printf "\r$c$b    Firewall Installed $endc$enda\n\n" >&2
 else
-    printf "\r$c$b    Firewall Not Installed $endc$enda\n" >&2
+    printf "\r$r$b    Firewall Not Installed $endc$enda\n\n" >&2
 fi
 
 printf "$g$b    Installing Apache2 Web Server... $endc$enda\n" >&2
 if sudo apt-get install apache2 -y &> /dev/null
 then
-    printf "\r$c$b    Installed Apache Web Server $endc$enda\n" >&2
+    printf "\r$c$b    Installed Apache Web Server $endc$enda\n\n" >&2
 else
-    printf "\r$c$b    Apache2 Not Installed $endc$enda\n" >&2
+    printf "\r$r$b    Apache2 Not Installed $endc$enda\n\n" >&2
 fi
 
 # Setup Firewall
@@ -70,30 +68,34 @@ printf "$g$b    Setting up Firewall... $endc$enda\n" >&2
 sudo ufw app list &> /dev/null
 sudo ufw allow "OpenSSH" &> /dev/null
 sudo ufw allow "Apache Full" &> /dev/null
-printf "$g$b    Firewall Setup Completed $endc$enda\n" >&2
+printf "$c$b    Firewall Setup Completed $endc$enda\n\n" >&2
 
 # Install MySQL
 printf "$g$b    Installing MySQL... $endc$enda\n" >&2
 if sudo apt-get install mysql-server -y &> /dev/null
 then
-    printf "\r$c$b    MySQL Installed $endc$enda\n" >&2
+    printf "\r$c$b    MySQL Installed $endc$enda\n\n" >&2
 else
-    printf "\r$c$b    MySQL Not Installed $endc$enda\n" >&2
+    printf "\r$r$b    MySQL Not Installed $endc$enda\n\n" >&2
 fi
 
 # Install PHP
 printf "$g$b    Installing PHP... $endc$enda\n" >&2
 if sudo apt-get install php libapache2-mod-php php-mysql -y &> /dev/null
 then
-    printf "\r$c$b    PHP Installed $endc$enda\n" >&2
+    printf "\r$c$b    PHP Installed $endc$enda\n\n" >&2
 else
-    printf "\r$c$b    PHP Not Installed $endc$enda\n" >&2
+    printf "\r$r$b    PHP Not Installed $endc$enda\n\n" >&2
 fi
 
 # add a info.php file in your web server
-sudo cd /var/www/html
-sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/about.php
-printf "\n$c$b    PHP info available on - localhost/about.php $endc$enda\n\n"
+cd /var/www/html &> /dev/null
+if sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/about.php &> /dev/null
+then
+    printf "\n$c$b    PHP info available on - localhost/about.php $endc$enda\n\n"
+else
+    printf "\n$c$b    Completing Setup... $endc$enda\n\n"
+fi
 
 # Restart Apache2
 sudo service apache2 stop &> /dev/null
