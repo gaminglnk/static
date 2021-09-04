@@ -92,8 +92,8 @@ fi
 
 # add a info.php file in your web server
 sudo cd /var/www/html
-sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/info.php
-printf "\n$c$b    PHP info available on - localhost/info.php $endc$enda\n\n"
+sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/about.php
+printf "\n$c$b    PHP info available on - localhost/about.php $endc$enda\n\n"
 
 # Restart Apache2
 sudo service apache2 stop &> /dev/null
