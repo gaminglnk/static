@@ -5,11 +5,11 @@ Applications that can be installed on a linux server in one command.
 
 To install apache web server, use this command on your linux machine :
 
-` sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/apache.sh && sudo chmod +x ./apache.sh `
+` sudo wget https://cdn.jsdelivr.net/gh/apix-loi/jsdelivr/apps/apache.sh && sudo chmod +x ./apache2.sh `
 
 and now run the "apache.sh" file to execute the installation.
 
-` ./apache.sh `
+` ./apache2.sh `
 
 ---
 
