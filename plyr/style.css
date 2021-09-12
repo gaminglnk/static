@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @keyframes plyr-progress {
 	to {
 		background-position: 25px 0
@@ -75,7 +76,7 @@
 	direction: ltr;
 	display: flex;
 	flex-direction: column;
-	font-family: 'Verdana', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-family: var(--plyr-font-family, 'Verdana', sans-serif);
 	font-display: swap;
 	font-variant-numeric: tabular-nums;
