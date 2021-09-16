@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @keyframes plyr-progress {
 	to {
 		background-position: 25px 0
@@ -23,30 +23,6 @@
 	to {
 		opacity: 1
 	}
-}
-/* Here lies all the commented code this you can uncomment to use*/
-/*.plyr__volume {
-	align-items: center;
-	display: flex;
-	max-width: 110px;
-	min-width: 80px;
-	position: relative;
-	width: 20%
-}
-
-.plyr__volume input[type=range] {
-	margin-left: 5px;
-	margin-right: 5px;
-	position: relative;
-	z-index: 2;
-	cursor: pointer
-}*/
-.plyr-responsive {
- width: 100%;
- height: auto;
-}
-.sidebanner{
-	display: none;
 }
 @media (min-width: 1500px){
 	.sidebanner{
@@ -91,7 +67,6 @@
 	text-shadow: none;
 	transition: box-shadow .3s ease;
 	z-index: 0;
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 .plyr audio,
@@ -197,14 +172,14 @@
 
 @media(min-width:400px) {
 	.plyr__captions {
-		font-size: 22px;
+		font-size: 15px;
 		padding: 20px
 	}
 }
 
 @media(min-width:600px) {
 	.plyr__captions {
-		font-size: 27px
+		font-size: 18px
 	}
 }
 
@@ -335,7 +310,8 @@ a.plyr__control::before {
 }
 
 .plyr__controls .plyr__controls__item.plyr__time {
-	padding: 0 5px
+	padding: 0 5px;
+	text-shadow: 0 0 3px #000
 }
 
 .plyr__controls .plyr__controls__item.plyr__time--duration {
@@ -547,7 +523,7 @@ a.plyr__control::before {
 }
 
 .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
-	background: #ffae05
+	background: #FFAE05
 }
 
 .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::after {
@@ -575,7 +551,7 @@ a.plyr__control::before {
 	background: 0 0;
 	border: 0;
 	border-radius: 26px;
-	color: #ffae05;
+	color: #FFAE05;
 	display: block;
 	height: 19px;
 	margin: 0;
@@ -700,17 +676,17 @@ a.plyr__control::before {
 }
 
 .plyr--full-ui input[type=range].plyr__tab-focus::-webkit-slider-runnable-track {
-	box-shadow: 0 0 0 5px rgba(255, 174, 5, .5);
+	box-shadow: 0 0 0 5px rgba(255, 174, 5, .7);
 	outline: 0
 }
 
 .plyr--full-ui input[type=range].plyr__tab-focus::-moz-range-track {
-	box-shadow: 0 0 0 5px rgba(255, 174, 5, .5);
+	box-shadow: 0 0 0 5px rgba(255, 174, 5, .7);
 	outline: 0
 }
 
 .plyr--full-ui input[type=range].plyr__tab-focus::-ms-track {
-	box-shadow: 0 0 0 5px rgba(255, 174, 5, .5);
+	box-shadow: 0 0 0 5px rgba(255, 174, 5, .7);
 	outline: 0
 }
 
@@ -735,10 +711,6 @@ a.plyr__control::before {
 
 .plyr__time {
 	font-size: 14px
-}
-
-.plyr__time+.plyr__time {
-	text-shadow: 0 0 3px #000
 }
 
 .plyr__time+.plyr__time::before {
@@ -938,7 +910,7 @@ a.plyr__control::before {
 .plyr--audio .plyr__control.plyr__tab-focus,
 .plyr--audio .plyr__control:hover,
 .plyr--audio .plyr__control[aria-expanded=true] {
-	background: #ffae05;
+	background: #FFAE05;
 	color: #fff
 }
 
@@ -1036,7 +1008,7 @@ a.plyr__control::before {
 .plyr--video .plyr__control.plyr__tab-focus,
 .plyr--video .plyr__control:hover,
 .plyr--video .plyr__control[aria-expanded=true] {
-	background: #ffae05;
+	background: #FFAE05;
 	color: #fff
 }
 
@@ -1056,7 +1028,7 @@ a.plyr__control::before {
 
 .plyr--video a.plyr__control[aria-expanded=true],
 .plyr--video button.plyr__control[aria-expanded=true] {
-	background: rgba(255, 174, 5, .5)
+	background: rgba(255, 174, 5, .66)
 }
 
 .plyr--video a.plyr__control[aria-expanded=true] svg,
@@ -1070,15 +1042,19 @@ a.plyr__control::before {
 }
 
 .plyr--video .plyr__menu__container .plyr__control.plyr__tab-focus,
-.plyr--video .plyr__menu__container .plyr__control:hover,
 .plyr--video .plyr__menu__container .plyr__control[aria-expanded=true] {
-	background: #ffae05!important
+	background: #FFAE05!important
+}
+
+.plyr--video .plyr__menu__container .plyr__control:hover {
+	background: #FEC03E!important;
+	color: rgb(49, 49, 49);
 }
 
 .plyr__control--overlaid {
 	background: rgba(255, 174, 5, .8);
 	border: 0;
-	border-radius: 20%;
+	border-radius: 50%;
 	color: #fff;
 	display: none;
 	left: 50%;
@@ -1555,7 +1531,7 @@ a.plyr__control::before {
 }
 
 .plyr__resume .plyr__resume__yes {
-	border: 1px solid #ffae05
+	border: 1px solid #FFAE05
 }
 
 .plyr__resume button {
