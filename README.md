@@ -1,2 +1,2 @@
-# jsdelivr
-This is a website hosted on GitHub Pages to provide CSS, Js, and other files to my other sites.
+# Jsdelivr
+This is a repository that hosts all css, js, and other files with a domain https://apicloud.eu.org/.
