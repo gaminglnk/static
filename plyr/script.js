@@ -3509,7 +3509,7 @@
             blankVideo: "https://cdn.plyr.io/static/blank.mp4",
             quality: {
                 default: 576,
-                options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240],
+                options: [75, 4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240,],
                 forced: !1,
                 onChange: null
             },
@@ -3518,7 +3518,7 @@
             },
             speed: {
                 selected: 1,
-                options: [.5, .75, 1, 1.25, 1.5, 1.75, 2, 4]
+                options: [ .75, 1, 1.5, 1.75, 2]
             },
             keyboard: {
                 focused: !0,
@@ -3582,11 +3582,12 @@
                 advertisement: "Ad",
                 qualityBadge: {
                     2160: "4K",
-                    1440: "HD",
-                    1080: "HD",
+                    1440: "2K",
+                    1080: "FHD",
                     720: "HD",
                     576: "SD",
-                    480: "SD"
+                    480: "SD",
+                    75: "Auto"
                 }
             },
             urls: {
