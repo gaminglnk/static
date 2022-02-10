@@ -427,7 +427,7 @@ a.plyr__control::before {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	width: 100%
+	width: 100%;
 }
 
 .plyr__menu__container .plyr__control>span {
@@ -445,7 +445,7 @@ a.plyr__control::before {
 }
 
 .plyr__menu__container .plyr__control--forward {
-	padding-right: 28px
+	padding-right: 28px;
 }
 
 .plyr__menu__container .plyr__control--forward::after {
