@@ -1,3 +1,5 @@
+/* Line no 1063 i.e. player play icon is changed */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @keyframes plyr-progress {
 	to {
@@ -63,7 +65,7 @@
 	max-width: 100%;
 	min-width: 200px;
 	position: relative;
-	border-radius: 7px;
+	border-radius: 3px;
 	text-shadow: none;
 	transition: box-shadow .3s ease;
 	z-index: 0;
@@ -1058,7 +1060,7 @@ a.plyr__control::before {
 	color: #fff;
 	display: none;
 	left: 50%;
-	padding: 30px;
+	padding: 22px;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
